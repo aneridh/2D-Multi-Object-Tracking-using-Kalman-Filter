@@ -1,1 +1,3 @@
 # 2D-Multi-Object-Tracking-using-Kalman-Filter
+
+#The hybrid method aims to address challenges such as occlusion and changes in object appearance, enhancing overall tracking performance. Over here, a pre-trained Mask R-CNN model is employed for precise object detection. Thereafter, a confidence threshold was applied to filter out low-confidence detections. Following that, a Kalman filter is initialized for each detected or new object, with customizable parameters to adapt to varying object dynamics. The integration phase associates detected objects with existing tracks using Intersection over Union (IoU) matching, updating Kalman filter predictions based on matched detections, and resetting age and hit counters.
